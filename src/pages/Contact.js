@@ -2,12 +2,11 @@ import React from 'react'
 import "./Contact.css"
 
 const Contact = () => {
-    return (
+    return (<>
         <section className="contact">
             <div className="contact-container">
 
-                <div className="">
-
+                <div className="extra">
                     <h1>Get in touch with me</h1>
                     <div className="form-container">
                         <form action="" className="contact-form">
@@ -57,7 +56,7 @@ const Contact = () => {
                     <i class="fas fa-mail-bulk"></i>
                 </div>
             </div>
-        </section>
+        </section></>
     )
 }
 
