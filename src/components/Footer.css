@@ -21,3 +21,9 @@
 .footer-icons {
   padding: 0 1rem;
 }
+
+@media (max-width: 425px) {
+  .footer {
+    padding: 1rem;
+  }
+}

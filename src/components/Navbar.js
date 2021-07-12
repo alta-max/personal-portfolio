@@ -40,7 +40,7 @@ const Navbar = () => {
             </div>
 
             <nav>
-                <div className="menu-icons" onClick={() => setclick(!click)}>;
+                <div className="menu-icons" onClick={() => setclick(!click)}>
                     <i className={button && "fas fa-bars toggle-icon"} ></i>
                 </div>
                 <ul className="container">

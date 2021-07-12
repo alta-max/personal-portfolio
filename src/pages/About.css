@@ -36,11 +36,34 @@
   }
   .container-about {
     flex-direction: column;
-    text-align: center;
   }
   .text {
-    text-align: center;
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  /* .about-section {
+    height: 100vh;
+  } */
+  .main {
+    font-size: 1rem;
+  }
+  .content {
+    font-size: 0.8rem;
+  }
+  .icons-1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-icons {
+    font-size: 2rem;
+  }
+  .container-about {
+    padding: 0;
+    height: 75vh;
   }
 }

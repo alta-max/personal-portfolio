@@ -16,15 +16,17 @@ const About = () => {
                 </div>
                 <div className="skills">
                     <h1 className="main">my SKILLS</h1>
-                    <div className="">
+                    <div className="icons-1">
                         <i class="fab fa-html5 about-icons"></i>
                         <i class="fab fa-css3 about-icons"></i>
                         <i class="fab fa-js-square about-icons"></i>
-
                     </div>
-                    <i class="fab fa-react about-icons"></i>
-                    <i class="fab fa-node about-icons"></i>
-                    <i class="fab fa-bootstrap about-icons"></i>
+                    <div className="icons-1">
+                        <i class="fab fa-react about-icons"></i>
+                        <i class="fab fa-node about-icons"></i>
+                        <i class="fab fa-bootstrap about-icons"></i>
+                    </div>
+
                 </div>
             </div>
         </section>

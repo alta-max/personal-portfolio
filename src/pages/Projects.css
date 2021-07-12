@@ -43,3 +43,16 @@
   color: #fff;
   font-size: 1rem;
 }
+
+@media (max-width: 425px) {
+  .projects-container {
+    height: 18rem;
+  }
+  .projects-icon {
+    font-size: 4rem;
+    width: 100%;
+  }
+  .projects {
+    padding: 2rem;
+  }
+}
