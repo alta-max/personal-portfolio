@@ -1,0 +1,46 @@
+.about-section {
+  background-color: black;
+  color: #fff;
+  height: 80vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.text {
+  width: 50%;
+}
+
+.content {
+  font-size: 1.5rem;
+}
+
+.container-about {
+  display: flex;
+  padding: 6rem;
+  justify-content: space-between;
+}
+
+.about-icons {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    height: 100vh;
+    text-align: center;
+  }
+  .container-about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,25 @@
+.section {
+  height: 75vh;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+}
+
+.name {
+  font-size: 8rem;
+  letter-spacing: 1rem;
+}
+
+.intro-text {
+  font-size: 3rem;
+}
+
+@media (max-width: 1230px) {
+  .section {
+    padding-top: 8rem;
+  }
+}
+@media (max-width: 900px) {
+  .section {
+    padding-top: 8rem;
+  }
+}
