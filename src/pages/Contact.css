@@ -80,6 +80,9 @@
 }
 
 @media (max-width: 1230px) {
+  .contact {
+    height: 100%;
+  }
   .contact-image {
     font-size: 15rem;
   }

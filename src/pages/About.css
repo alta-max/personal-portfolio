@@ -29,9 +29,15 @@
   margin: 2rem;
 }
 
+@media (max-width: 1230px) {
+  .about-section {
+    height: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .about-section {
-    height: 100vh;
+    height: 100%;
     text-align: center;
   }
   .container-about {

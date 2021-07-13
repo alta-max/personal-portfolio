@@ -43,6 +43,7 @@ a {
 .toggle-icon {
   font-size: 4rem;
   margin: 3rem;
+  cursor: pointer;
 }
 
 /* .toggle-nav-container {
@@ -52,6 +53,12 @@ a {
 @media (max-width: 1230px) {
   .container {
     display: none;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+  .toggle-icon {
+    font-size: 3rem;
   }
 }
 
