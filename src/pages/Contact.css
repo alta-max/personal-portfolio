@@ -83,6 +83,10 @@
   }
 }
 @media (max-width: 425px) {
+  .contact {
+    height: 100%;
+    padding: 2rem;
+  }
   .contact-container {
     flex-direction: column;
   }

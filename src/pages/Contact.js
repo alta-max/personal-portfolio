@@ -1,7 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Contact.css"
 
 const Contact = () => {
+    const [status, setStatus] = useState("Submit");
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
+        const { name, email, message } = e.target.elements;
+        let details = {
+            name: name.value,
+            email: email.value,
+            message: message.value,
+        };
+        let response = await fetch("http://localhost:5000/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(details),
+        });
+        setStatus("Submit");
+        let result = await response.json();
+        alert(result.status);
+    };
+
     return (<>
         <section className="contact">
             <div className="contact-container">
@@ -9,7 +31,7 @@ const Contact = () => {
                 <div className="extra">
                     <h1>Get in touch with me</h1>
                     <div className="form-container">
-                        <form action="" className="contact-form">
+                        <form action="" className="contact-form" onSubmit={handleSubmit}>
 
                             <input id="name" type="text" placeholder="Enter your Name" />
 
@@ -22,7 +44,7 @@ const Contact = () => {
                                 placeholder="Message"
                                 className="form-control"
                             ></textarea>
-                            <button type="submit">Submit</button>
+                            <button type="submit">{status}</button>
                         </form>
 
                     </div>
