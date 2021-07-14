@@ -50,7 +50,7 @@ const Projects = () => {
                     {Icon}
                     <h1>{Title}</h1>
                     <p>{Desc}</p>
-                    <h3><a href={Link}>CLICK HERE</a> to visit</h3>
+                    <h3><a href={Link}>CLICK <u>HERE</u></a> to visit</h3>
                     <h3>Source Code: <a href={SrcCode}> <i class="fab fa-github footer-icons"></i></a></h3>
                 </div>
             })}
