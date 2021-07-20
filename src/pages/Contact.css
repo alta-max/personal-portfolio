@@ -77,6 +77,10 @@
   .form-container {
     margin: 4rem;
   }
+
+  .footer-socials {
+    padding-bottom: 5rem;
+  }
 }
 
 @media (max-width: 1230px) {
