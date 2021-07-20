@@ -2,27 +2,6 @@ import React, { useState } from 'react'
 import "./Contact.css"
 
 const Contact = () => {
-    const [status, setStatus] = useState("Submit");
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setStatus("Sending...");
-        const { name, email, message } = e.target.elements;
-        let details = {
-            name: name.value,
-            email: email.value,
-            message: message.value,
-        };
-        let response = await fetch("http://localhost:5000/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json;charset=utf-8",
-            },
-            body: JSON.stringify(details),
-        });
-        setStatus("Submit");
-        let result = await response.json();
-        alert(result.status);
-    };
 
     return (<>
         <section className="contact">
@@ -31,11 +10,11 @@ const Contact = () => {
                 <div className="extra">
                     <h1>Get in touch with me</h1>
                     <div className="form-container">
-                        <form action="" className="contact-form" onSubmit={handleSubmit}>
+                        <form action="https://formspree.io/f/xknkvkvq" method="POST" className="contact-form" >
 
-                            <input id="name" type="text" placeholder="Enter your Name" />
+                            {/* <input id="name" type="text" placeholder="Enter your Name" /> */}
 
-                            <input id="email" type="email" placeholder="Enter your Email here" />
+                            <input name="_replyto" id="email" type="email" placeholder="Enter your Email here" />
 
                             <textarea
                                 id="message"
@@ -44,7 +23,7 @@ const Contact = () => {
                                 placeholder="Message"
                                 className="form-control"
                             ></textarea>
-                            <button type="submit">{status}</button>
+                            <button type="submit">Submit</button>
                         </form>
 
                     </div>
