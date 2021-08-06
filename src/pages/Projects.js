@@ -3,12 +3,11 @@ import "./Projects.css"
 
 const projects = [
     {
-        Icon: <i class="fas fa-shopping-cart"></i>,
+        Icon: <i class="fas fa-shopping-cart projects-icon"></i>,
         Title: "JustBuyIt",
         Desc: "Everything you need.",
         Link: "https://justbuyit.netlify.app/",
         SrcCode: "https://github.com/alta-max/Cloth-Store"
-
     },
     {
         Icon: <i class="fal fa-newspaper projects-icon"></i>,
