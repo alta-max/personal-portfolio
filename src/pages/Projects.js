@@ -3,6 +3,14 @@ import "./Projects.css"
 
 const projects = [
     {
+        Icon: <i class="fas fa-shopping-cart"></i>,
+        Title: "JustBuyIt",
+        Desc: "Everything you need.",
+        Link: "https://justbuyit.netlify.app/",
+        SrcCode: "https://github.com/alta-max/Cloth-Store"
+
+    },
+    {
         Icon: <i class="fal fa-newspaper projects-icon"></i>,
         Title: "Tech News",
         Desc: "Search for news and latest articles on your favourite technologies.",
@@ -16,14 +24,6 @@ const projects = [
         Desc: "Search Your Favourite Cocktail with all its ingredients and instructions.",
         Link: "https://musing-saha-d3e527.netlify.app/",
         SrcCode: "https://github.com/alta-max/api-project"
-
-    },
-    {
-        Icon: <i class="fas fa-film projects-icon"></i>,
-        Title: "Search-Flix",
-        Desc: "Search Your Favourite movies.",
-        Link: "https://search-flix.netlify.app/",
-        SrcCode: "https://github.com/alta-max/searchMovies"
 
     },
     {
