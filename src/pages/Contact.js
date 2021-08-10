@@ -66,6 +66,9 @@ const Wrapper = styled.section`
 h1{
     font-size: 2rem;
 }
+h2{
+    padding-bottom: 1rem;
+}
 .contact {
   height: 75vh;
   text-align: center;
@@ -168,7 +171,7 @@ h1{
     flex-direction: column;
   }
   .contact-form {
-    width: 20rem;
+    width: 23rem;
   }
 }
 
