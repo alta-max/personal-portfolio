@@ -107,6 +107,7 @@ const Wrapper = styled.section`
   .container-about {
     padding: 0;
     height: 75vh;
+    justify-content: center;
   }
 }
 
