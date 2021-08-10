@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Projects.css"
+import styled from 'styled-components';
 
 const projects = [
     {
@@ -37,7 +37,7 @@ const projects = [
 
 
 const Projects = () => {
-    return (<>
+    return (<Wrapper>
 
         <div className="projects-heading">
             <h1>Projects</h1>
@@ -54,8 +54,73 @@ const Projects = () => {
                 </div>
             })}
 
-        </section></>
+        </section></Wrapper>
     )
 }
+
+const Wrapper = styled.section`
+h1{
+    font-size: 1.5rem;
+}
+.projects {
+  background-color: black;
+  padding: 2rem 10rem 10rem 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects-container {
+  text-align: center;
+  background-color: white;
+  width: 30rem;
+  height: 20rem;
+  margin: 2rem;
+  border-radius: 5rem;
+}
+
+.projects-icon {
+  font-size: 8rem;
+  padding: 0.5rem;
+}
+
+.projects h1 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.projects h3 {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem;
+}
+
+.projects p {
+  font-family: "Raleway", sans-serif;
+  padding-top: 0.5rem;
+}
+
+.projects-heading {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding-top: 3rem;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  font-size: 1rem;
+}
+
+@media (max-width: 425px) {
+  .projects-container {
+    height: 18rem;
+  }
+  .projects-icon {
+    font-size: 4rem;
+    width: 100%;
+  }
+  .projects {
+    padding: 2rem;
+  }
+}
+
+`
 
 export default Projects

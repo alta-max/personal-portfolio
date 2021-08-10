@@ -1,9 +1,8 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import "./About.css"
+import styled from 'styled-components'
 
 const About = () => {
-    return (<>
+    return (<Wrapper>
         <section className="about-section">
             <div className="container-about">
                 <div className="text">
@@ -30,9 +29,87 @@ const About = () => {
                 </div>
             </div>
         </section>
-        {/* <Footer /> */}
-    </>
+    </Wrapper>
     )
 }
+
+const Wrapper = styled.section`
+.about-section {
+  background-color: black;
+  color: #fff;
+  height: 80vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.text {
+  width: 50%;
+}
+
+.content {
+  font-size: 1.5rem;
+}
+
+.container-about {
+  display: flex;
+  padding: 6rem;
+  justify-content: space-between;
+}
+
+.about-icons {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+@media (max-width: 1230px) {
+  .about-section {
+    height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    height: 100%;
+    text-align: center;
+  }
+  .container-about {
+    flex-direction: column;
+  }
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  /* .about-section {
+    height: 100vh;
+  } */
+  .main {
+    font-size: 1rem;
+  }
+  .content {
+    font-size: 0.8rem;
+  }
+  .icons-1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-icons {
+    font-size: 2rem;
+  }
+  .container-about {
+    padding: 0;
+    height: 75vh;
+  }
+}
+
+`
 
 export default About

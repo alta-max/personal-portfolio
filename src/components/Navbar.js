@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import "./Navbar.css"
 import { Link } from "react-router-dom";
+import styled from 'styled-components';
 
 const Navbar = () => {
     const [button, setButton] = useState(true);
@@ -19,7 +19,7 @@ const Navbar = () => {
     }, []);
 
     window.addEventListener('resize', showButton);
-    return (<>
+    return (<NavContainer>
 
         <div className="header">
             <div className="heading">
@@ -59,8 +59,91 @@ const Navbar = () => {
                 </ul>
             </nav>
 
-        </div></>
+        </div></NavContainer>
     )
 }
+
+const NavContainer = styled.nav`
+.heading {
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  margin: 2rem;
+  padding-left: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  margin: 2rem;
+  padding: 2rem;
+  margin-left: 10rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 0 2rem;
+  font-family: "Abel", sans-serif;
+  font-size: 2rem;
+  color: black;
+  transition: all 0.2s;
+}
+li:hover {
+  font-size: 2.5rem;
+  transform: translateZ(5px);
+  font-weight: 700;
+}
+
+
+.toggle-icon {
+  font-size: 4rem;
+  margin: 3rem;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1230px) {
+  .container {
+    display: none;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+  .toggle-icon {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    display: none;
+  }
+
+  .toggle-icon {
+    font-size: 2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+    padding-top: 0.8rem;
+  }
+
+}
+
+`
 
 export default Navbar

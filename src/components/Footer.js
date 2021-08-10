@@ -1,8 +1,9 @@
 import React from 'react'
-import "./Footer.css"
+import styled from 'styled-components'
 
 const Footer = () => {
-    return (
+    return (<Wrapper>
+
         <footer className="footer">
             <div className="footer-heading">
                 Altamash Sayed
@@ -33,7 +34,39 @@ const Footer = () => {
                 All rights reserved
             </div>
         </footer>
+    </Wrapper>
     )
 }
+
+const Wrapper = styled.footer`
+.footer {
+  text-align: center;
+  padding: 5rem;
+}
+
+.footer-heading {
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.footer-text {
+  font-family: "Abel", sans-serif;
+}
+
+.footer-socials {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+
+
+@media (max-width: 425px) {
+  .footer {
+    padding: 1rem;
+  }
+}
+
+`
 
 export default Footer
