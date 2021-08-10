@@ -3,14 +3,18 @@ import styled from 'styled-components'
 import About from "../pages/About"
 import Contact from './Contact'
 import Projects from './Projects'
+import Zoom from 'react-reveal/Zoom';
+
 
 const Home = () => {
     return (<Wrapper>
-        <section className="section">
-            <h3 className="intro-text">Hello, I'm </h3>
-            <h1 className="name">Altamash <br></br>Sayed</h1>
-            <h2>Full STACK Web Developer</h2>
-        </section>
+        <Zoom>
+            <section className="section">
+                <h3 className="intro-text">Hello, I'm </h3>
+                <h1 className="name">Altamash <br></br>Sayed</h1>
+                <h2>Full STACK Web Developer</h2>
+            </section>
+        </Zoom>
         <About />
         <Contact />
         <Projects />
