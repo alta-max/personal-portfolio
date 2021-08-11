@@ -13,7 +13,7 @@ const projects = [
         Icon: <i class="fal fa-newspaper projects-icon"></i>,
         Title: "Tech News",
         Desc: "Search for news and latest articles on your favourite technologies.",
-        Link: "https://confident-bohr-98e677.netlify.app/",
+        Link: "https://reacttechnews.netlify.app/",
         SrcCode: "https://github.com/alta-max/News-Project"
 
     },
