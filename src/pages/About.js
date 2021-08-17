@@ -7,7 +7,7 @@ const About = () => {
             <div className="container-about">
                 <div className="text">
                     <h1 className="main">about Me</h1>
-                    <p className="content">Hi there, my name is Altamash Sayed and I write CODE.
+                    <p className="content">Hi there, my name is Altamash Sayed and I design/develop Web apps and sites.
                         I am a to be Computer Engineer and currently I am exploring Web Development.
                         I am a person who has high passion for new technologies which make coding easy and fun.
                         I like coding both the frontend as well as the backend.
